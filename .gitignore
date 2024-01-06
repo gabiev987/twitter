@@ -1,5 +1,6 @@
 src/main/resources/application.properties
 src/main/resources/application-dev.properties
+src/main/test/resources/application-test.properties
 uploads/
 HELP.md
 target/
