@@ -3,7 +3,7 @@
 </a>
 <div class="collapse <#if message??>show</#if>" id="collapseExample">
     <div class="form-group mt-3">
-        <form method="post" enctype="multipart/form-data">
+        <form method="post" action="/message" enctype="multipart/form-data">
             <div class="form-group">
                 <input type="text" class="form-control ${(textError??)?string('is-invalid', '')}"
                        value="<#if message??>${message.text}</#if>" name="text" placeholder="Введите сообщение"/>
@@ -30,6 +30,7 @@
             </div>
             <input type="hidden" name="_csrf" value="${_csrf.token}" />
             <input type="hidden" name="id" value="<#if message??>${message.id}</#if>" />
+            <input type="hidden" name="redirectUrl" value="${currentUrl}" />
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Save message</button>
             </div>
