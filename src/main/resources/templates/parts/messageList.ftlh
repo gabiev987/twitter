@@ -5,8 +5,8 @@
 <@p.pager currentUrl page />
 
 <div class="card-columns" id="message-list">
-    <#list page.content as message>
-        <@m.messageCard currentUrl message currentUserId/>
+    <#list page.content as mess>
+        <@m.messageCard currentUrl mess currentUserId/>
     <#else>
         No message
     </#list>

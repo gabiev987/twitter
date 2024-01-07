@@ -1,6 +1,6 @@
 package com.gabiev.twitter;
 
-import com.gabiev.twitter.controller.MainController;
+import com.gabiev.twitter.controller.MessageController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -24,7 +24,7 @@ public class LoginTest {
     private MockMvc mockMvc;
 
     @Autowired
-    private MainController controller;
+    private MessageController controller;
 
     @Test
     public void contextLoads() throws Exception {
