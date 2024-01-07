@@ -58,7 +58,7 @@ public class UserService implements UserDetailsService {
         if (!StringUtils.isEmpty(user.getEmail())) {
             String message = String.format(
                     "Добрый день, %s \n" +
-                            "Добро пжаловать в Твиттер! \n" +
+                            "Добро пожаловать в Твиттер! \n" +
                             "Пожалуйста, перейдите по ссылке: http://%s/activate/%s",
                     user.getUsername(),
                     hostname,
